@@ -4,18 +4,87 @@
     <meta charset="utf-8">
     <link rel="stylesheet" type="text/css" href="style.css">
     <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Barrio" rel="stylesheet">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
     <title>Alex Benedek - Portfolio Page</title>
   </head>
   <body>
-
+    <script>
+      $(function() {
+      $('a[href*="#"]:not([href="#"])').click(function() {
+        if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') && location.hostname == this.hostname) {
+          var target = $(this.hash);
+          target = target.length ? target : $('[name=' + this.hash.slice(1) +']');
+          if (target.length) {
+            $('html, body').animate({
+              scrollTop: target.offset().top
+            }, 1000);
+            return false;
+          }
+        }
+      });
+    });
+      </script>
 
     <nav>
       <ul>
-        <li><a href="#">Item 1</a>
-        <li><a href="#">Item 2</a>
-        <li><a href="#">Item 3</a>
+        <li><a href="#">Home</a>
+        <li><a href="#portfolio">Portfolio</a>
+        <li><a href="#">Projects</a>
       </ul>
     </nav>
+<div id="container">
+
+    <section id="siteTitle">
+      <h1> Welcome to Alex Benedek Personal Site (Project)</h1>
+    </section>
+
+    <section class="contentBox">
+      <img id="profilePic" src="https://media.licdn.com/mpr/mpr/shrinknp_200_200/p/4/000/16c/17f/0fcbc20.jpg"/>
+      <h2>About me</h2>
+
+      <p>
+Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+      </p>
+    </section>
+
+</div>
+
+
+  <section class="portfolio" id="portfolio">
+  <h2>Portfolio</h2>
+
+  <div class="row">
+    <div class="column">
+<a href="https://github.com/alexbnk/secret-tel-aviv" target="_blank">
+      <div class="column-inner">
+        <h3>Secret Tel-Aviv</h3>
+        <img src="img/sta.png">
+      </div>
+    </a>
+    </div>
+
+    <div class="column">
+      <a href="https://github.com/alexbnk/portfolio" target="_blank">
+      <div class="column-inner">
+        <h3>Portfolio</h3>
+        <img src="img/ap.png">
+      </div>
+      </a>
+    </div>
+
+    <div class="column">
+      <a href="https://github.com/alexbnk/tennis-challenge" target="_blank">
+      <div class="column-inner">
+        <h3>Tennis Challenge</h3>
+        <img src="img/tc.png">
+      </div>
+    </div>
+  </a>
+  </div>
+
+
+</section>
 
 
 

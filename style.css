@@ -1,24 +1,96 @@
 body {
-  font-family: 'Lato', sans-serif;
+  font-family: 'Lato', cursive;
+  color: Silver;
   margin:0px;
 }
 
 nav {
+
   text-transform: uppercase;
-  background-color: gray;
   width : 100%;
-  border: solid 1px #000;
+  text-align: center;
+
+  background-color : black;
+  color : white;
 }
 nav li {
+        display: inline-block;
+        padding: 10px;
 
-display: inline-block;
-height: 50px;
-padding: 20px;
-border: solid 1px #000;
+      }
+nav li:hover {
+  background-color: silver;
 
 }
-ul {
-  margin:auto;
-  border: solid 1px #000;
+nav ul {
+  margin:0px;
+}
+nav a {
+  text-decoration: none;
+  color : white;
+  font-weight: bold;
+}
 
+#siteTitle {
+  text-align: center;
+  padding: 20px;
+}
+#siteTitle h1 {
+  font-size: 3em;
+  font-weight: bold;
+  color : white;
+  margin: 0;
+
+}
+#container {
+ width : 100%;
+ margin: 0px;
+  background-image: url("img/bg2.png");
+  background-size: cover;
+  height: 700px;
+  text-align: center;
+}
+
+.contentBox {
+  margin: auto;
+  padding: 20px;
+  background: rgba(0, 0, 0, 0.6);
+  width: 40%;
+  border: 1px solid silver;
+  border-radius: 5px;
+  display: inline-block;
+  text-align: left;
+  position: relative;
+}
+contentBox h2 {
+  position: absolute;
+     top: 200px;
+     left: 0;
+     width: 100%;
+}
+
+
+
+section {
+  background-color: #ddd;
+  text-align: center;
+  padding: 20px;
+}
+
+section h2 {
+color: white;
+
+}
+
+.column {
+  float: left;
+  width: 33.333%;
+}
+.portfolio img {
+  width: 100%;
+  margin: 20px;
+}
+
+.column-inner {
+  padding: 20px;
 }
